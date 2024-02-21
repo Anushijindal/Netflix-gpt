@@ -35,7 +35,7 @@ const Login = () => {
                 
                 <button className='p-3 my-4 rounded-xl text-white bg-red-600 w-full'>{isSignIn?"Sign In":"Sign Up"}</button>
                 <p className='text-white py-4 cursor-pointer' onClick={toggleSignUp}>
-                {isSignIn ? "New to Netflix? SignUp Now" : "Already registered? SignIn Now"}</p>
+                {isSignIn ? "New to Netflix? Sign Up Now" : "Already registered? Sign In Now"}</p>
             </form>
         </div>
     </div>
