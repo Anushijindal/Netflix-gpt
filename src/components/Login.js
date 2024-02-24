@@ -5,7 +5,7 @@ import {createUserWithEmailAndPassword,signInWithEmailAndPassword, updateProfile
 import { auth } from "../utils/firebase";
 import { useDispatch } from 'react-redux';
 import { addUser } from '../utils/userSlice';
-import { PROFILE_URL } from '../utils/constants';
+import { BACKGROUND_URL, PROFILE_URL } from '../utils/constants';
 const Login = () => {
     const [isSignIn,setIsSignIn]=useState(true);
     const [errMessage,setErrMessage]=useState(null);
@@ -63,12 +63,12 @@ const Login = () => {
     <div>
         <Header/>
         <div className='absolute'>
-        <img  className="" 
-        src='https://assets.nflxext.com/ffe/siteui/vlv3/c0b69670-89a3-48ca-877f-45ba7a60c16f/2642e08e-4202-490e-8e93-aff04881ee8a/IN-en-20240212-popsignuptwoweeks-perspective_alpha_website_large.jpg' 
+        <img  className="h-screen object-cover md:w-screen" 
+        src={BACKGROUND_URL} 
         alt=''/>
         </div>
         <div className=''>
-            <form onSubmit={(e)=>e.preventDefault()} className='absolute bg-black bg-opacity-85 w-4/12 rounded-xl p-12 my-36 mx-auto left-0 right-0 text-white'>
+            <form onSubmit={(e)=>e.preventDefault()} className='absolute bg-black bg-opacity-85 md:w-4/12 w-full rounded-xl p-12 my-36 mx-auto left-0 right-0 text-white'>
                 <h2 className='text-white font-bold text-3xl py-4'>{isSignIn? "Sign In":"Sign Up"}</h2>
                 {!isSignIn && <input 
                 ref={name}
