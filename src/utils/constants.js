@@ -4,7 +4,7 @@ export const API_OPTIONS = {
     method: 'GET',
     headers: {
       accept: 'application/json',
-      Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1MzFhZTE4NDhhMDIwMGMwN2Q0YTZlZjIxMGRjNjQ4ZSIsInN1YiI6IjY1ZDYyY2I5YzVjMWVmMDE3ZDhhZTc4YSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.jTQ2dQT7-QZmbr3d67aXrbeY2TCKDjGf1TmPC32OP6A'
+      Authorization: 'Bearer '+process.env.REACT_APP_TMDB_KEY,
     }
   };
 export const POSTER_URL="https://image.tmdb.org/t/p/w500";
@@ -17,4 +17,4 @@ export const SUPPORTED_LANG=[
 ];
 // export const OPENAI_KEY="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";
 // export const OPENAI_KEY="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";
-export const OPENAI_KEY="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";
+export const OPENAI_KEY=process.env.REACT_APP_OPENAI_KEY2;
