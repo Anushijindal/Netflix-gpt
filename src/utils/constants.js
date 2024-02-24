@@ -15,6 +15,6 @@ export const SUPPORTED_LANG=[
   {identifier: "spanish", langName:"Spanish",},
   {identifier: "french", langName:"French",},
 ];
-// export const OPENAI_KEY="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";
-// export const OPENAI_KEY="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";
-export const OPENAI_KEY=process.env.REACT_APP_OPENAI_KEY2;
+// export const OPENAI_KEY=process.env.REACT_APP_OPENAI_KEY2;
+export const OPENAI_KEY=process.env.REACT_APP_OPENAI_KEY;
+
